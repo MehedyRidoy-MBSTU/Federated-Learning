@@ -18,7 +18,7 @@ from flwr.common import (
     ndarrays_to_parameters,
     Context
 )
-from flwr.common.logger import (
+from flwr.common.logger import ( # type: ignore
     ConsoleHandler,
     console_handler,
     FLOWER_LOGGER,
@@ -26,9 +26,9 @@ from flwr.common.logger import (
     log,
 )
 from logging import LogRecord
-from flwr.server import ClientManager, ServerAppComponents
-from flwr.server.client_proxy import ClientProxy, EvaluateRes
-import torch
+from flwr.server import ClientManager, ServerAppComponents 
+from flwr.server.client_proxy import ClientProxy, EvaluateRes 
+import torch 
 import torch.nn as nn
 import torch.optim as optim
 from torchvision import datasets

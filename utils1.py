@@ -72,7 +72,7 @@ def evaluate_model(model, test_set):
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
-
+            
             loss = criterion(outputs, labels)
             total_loss += loss.item()
 
